@@ -169,6 +169,9 @@ djangoCleanArch/
 │   │   └── urls.py
 │   ├── domain/
 │   │   └── models.py
+│   ├── management/
+│   │   ├── commands
+│   │       ├── seed_users.py
 │   ├── repositories/
 │   │   └── user_repository.py
 │   ├── services/
@@ -179,10 +182,11 @@ djangoCleanArch/
 │       ├── test_repository.py
 │       └── test_service.py
 │
-├── config/
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
+├── myproject/
+│   ├── config
+│       ├── urls.py
+│       ├── settings.py
+│       └── wsgi.py
 │
 ├── manage.py
 └── requirements.txt
