@@ -20,6 +20,7 @@ class UserListCreateView(generics.ListCreateAPIView):
 class UserRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    lookup_field = "username"
 
     def get(self, request, username):
         user = UserService.find_user(username)
